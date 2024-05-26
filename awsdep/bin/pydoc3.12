@@ -1,0 +1,5 @@
+#!/Users/shabi/Desktop/desk/Hesham/my_files/k_notes2023/my_codes_kvr/ml_aws_deploy/awsdep/bin/python3.12
+
+import pydoc
+if __name__ == '__main__':
+    pydoc.cli()

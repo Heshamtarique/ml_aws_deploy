@@ -1,0 +1,38 @@
+Agenda:
+
+1-- set github repo
+    a-- new environmet
+    b-- setup.py
+    c-- requirement.txt 
+
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Heshamtarique/ml_aws_deploy.git
+
+
+done till here..
+In order to push code-- if pusing frsit tiem- use "git global" https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
+git push -u origin main    
+
+created a gitignore file --- files need not to be commited will be ignored... awsdep -- env we created wont be pushed
+
+
+
+## setup.py
+https://docs.python.org/3.11/distutils/setupscript.html
+
+with the help of setup.py.. 
+we can build our ML model as a package and then we can deploy it pypy as well
+-e .     this will automatically trigger the setup file. added in the end of req file.
+
+
+
+
+
+
+
+

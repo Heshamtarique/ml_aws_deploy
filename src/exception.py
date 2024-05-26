@@ -5,6 +5,7 @@
 # import sys -- https://docs.python.org/3/library/sys.html
 
 import sys
+import logging
 
 def error_msg_details(error, error_detail:sys):
     # return type of sys 
@@ -20,7 +21,7 @@ def error_msg_details(error, error_detail:sys):
 class CustomException(Exception):
     
     def __init__(self, error_message, error_detail:sys):
-        super.__init__(error_message)  # overrifing the init
+        super().__init__(error_message)  # overrifing the init
         self.error_message = error_msg_details(
             error_message, error_detail=error_detail)
         
@@ -28,3 +29,14 @@ class CustomException(Exception):
     def __str__(self):
         return self.error_message
         
+        
+        
+if __name__ == "__main__":
+    try:
+        a = 1/0
+    except Exception as e:
+        logging.info("logging---")
+        raise CustomException(e, sys)
+    
+    
+    

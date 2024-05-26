@@ -1,0 +1,1 @@
+# reading the data deviding in train and validation data will be created 

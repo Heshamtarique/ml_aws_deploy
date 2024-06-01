@@ -5,7 +5,8 @@
 # import sys -- https://docs.python.org/3/library/sys.html
 
 import sys
-import logging
+import os
+from src.logger import logging
 
 def error_msg_details(error, error_detail:sys):
     # return type of sys 

@@ -1,6 +1,3 @@
-# model trianer... how many models, etc etc will be dumped here 
-
-
 import os
 import sys
 from dataclasses import dataclass
@@ -19,19 +16,3 @@ from xgboost import XGBRegressor
 
 from src.exception import CustomException
 from src.logger import logging
-
-from src.utils import save_object,evaluate_models
-
-@dataclass
-class ModelTrainerConfig:
-    trained_model_file_path=os.path.join("artifacts","model.pkl")
-
-
-
-class ModelTrainer:
-    def __init__(self):
-        self.model_trainer_config=ModelTrainerConfig()
-
-
-
-
